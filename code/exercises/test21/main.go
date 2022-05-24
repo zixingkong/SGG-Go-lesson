@@ -9,17 +9,6 @@ import "fmt"
 type MethodUtils struct {
 }
 
-func ZhuanZhi(arr *[3][3]int) {
-	for i := 0; i < len(*arr); i++ {
-		for j := 0; j < i;j++ {
-			temp := (*arr)[i][j]
-			(*arr)[i][j] = (*arr)[j][i]
-			(*arr)[j][i] = temp
-		}
-	}
-
-}
-
 
 
 func (me MethodUtils)Zhuanzhi(arr *[3][3]int) {

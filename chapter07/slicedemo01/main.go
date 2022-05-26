@@ -19,7 +19,8 @@ func main() {
 	fmt.Println("slice 的容量 =", cap(slice)) // 切片的容量是可以动态变化  
 
 	fmt.Printf("intArr[1]的地址=%p\n", &intArr[1])
-	fmt.Printf("slice[0]的地址=%p slice[0==%v\n", &slice[0], slice[0])
+	fmt.Printf("slice[0]的地址=%p slice[0]==%v\n", &slice[0], slice[0])
+	fmt.Printf("slice[0]的地址=%p intArr[1]的地址==%v\n", &slice[0], &intArr[1])
 	slice[1] = 34
 	fmt.Println()
 	fmt.Println()

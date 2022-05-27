@@ -1,10 +1,10 @@
-
 package main
+
 import (
 	"fmt"
 )
 
-//二分查找的函数
+// BinaryFind 二分查找的函数
 /*
 二分查找的思路: 比如我们要查找的数是 findVal
 1. arr是一个有序数组，并且是从小到大排序
@@ -32,10 +32,10 @@ func BinaryFind(arr *[6]int, leftIndex int, rightIndex int, findVal int) {
 
 	if (*arr)[middle] > findVal {
 		//说明我们要查找的数，应该在  leftIndex --- middel-1
-		BinaryFind(arr, leftIndex, middle - 1, findVal)
+		BinaryFind(arr, leftIndex, middle-1, findVal)
 	} else if (*arr)[middle] < findVal {
 		//说明我们要查找的数，应该在  middel+1 --- rightIndex
-		BinaryFind(arr, middle + 1, rightIndex, findVal)
+		BinaryFind(arr, middle+1, rightIndex, findVal)
 	} else {
 		//找到了
 		fmt.Printf("找到了，下标为%v \n", middle)
@@ -44,9 +44,9 @@ func BinaryFind(arr *[6]int, leftIndex int, rightIndex int, findVal int) {
 
 func main() {
 
-	arr := [6]int{1,8, 10, 89, 1000, 1234}
+	arr := [6]int{1, 8, 10, 89, 1000, 1234}
 
 	//测试一把
-	BinaryFind(&arr, 0, len(arr) - 1, -6)
+	BinaryFind(&arr, 0, len(arr)-1, -6)
 
 }

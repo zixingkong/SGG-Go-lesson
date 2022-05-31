@@ -40,7 +40,7 @@ func test02() {
 		//如果读取文件发送错误，就输出这个错误，并终止程序
 		panic(err)
 	}
-	fmt.Println("test02()继续执行....")
+	fmt.Println("test02-recurse()继续执行....")
 }
 	
 

@@ -19,7 +19,7 @@ func (re Rectangle) area() float64 {
 编写方法：判断一个数是奇数还是偶数
 */
 func (re Rectangle) Judge(num int) {
-	if num % 2 == 0 {
+	if num%2 == 0 {
 		fmt.Printf("%v 是偶数\n", num)
 	} else {
 		fmt.Printf("%v 是奇数\n", num)
@@ -28,8 +28,8 @@ func (re Rectangle) Judge(num int) {
 
 /*
 ) 根据行、列、字符打印 对应行数和列数的字符，比如：行：3，列：2，字符*,则打印相应的效 果
- */
-func (re Rectangle) printTest(m, n int,flag string) {
+*/
+func (re Rectangle) printTest(m, n int, flag string) {
 	for i := 0; i < m; i++ {
 		for j := 0; j < n; j++ {
 			fmt.Print(flag)
@@ -42,5 +42,5 @@ func main() {
 	fmt.Println("area = ", re.area())
 	re.Judge(5)
 	re.Judge(6)
-	re.printTest(5,6, "+")
+	re.printTest(5, 6, "+")
 }

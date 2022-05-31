@@ -1,7 +1,7 @@
 package main
 
 import (
-	"SGG-Go-lesson/exercises/test23/module"
+	"SGG-Go-lesson/exercises/test23-factory/module"
 	"fmt"
 )
 

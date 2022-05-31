@@ -48,7 +48,7 @@ func main() {
 	//Go的数组属值类型， 在默认情况下是值传递， 因此会进行值拷贝。数组间不会相互影响
 
 	//arr := [3]int{11, 22, 33}
-	//test01(arr)
+	//test01-function(arr)
 	//fmt.Println("main arr=", arr) //
 
 

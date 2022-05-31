@@ -13,7 +13,7 @@ func test() {
 func test02(n1 int) {
 	
 	n1 = n1 + 10
-	fmt.Println("test02() n1= ", n1)
+	fmt.Println("test02-recurse() n1= ", n1)
 }
 
 func test02(n1 int , n2 int) {
@@ -24,7 +24,7 @@ func test02(n1 int , n2 int) {
 func test03(n1 *int) {
 	fmt.Printf("n1的地址 %v\n",&n1)
 	*n1 = *n1 + 10
-	fmt.Println("test03() n1= ", *n1) // 30
+	fmt.Println("test03-recurse() n1= ", *n1) // 30
 }
 
 
@@ -32,7 +32,7 @@ func test03(n1 *int) {
 
 func main() {
 	// num := 20
-	// test02(num)
+	// test02-recurse(num)
 	// fmt.Println("main() num= ", num)
 
 	num := 20

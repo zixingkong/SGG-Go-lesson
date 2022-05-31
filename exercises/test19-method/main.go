@@ -31,13 +31,13 @@ func (ca Calculator) Calculate(operator string) float64 {
 }
 
 func main() {
-	ca := Calculator{5,6.0}
+	ca := Calculator{5, 6.0}
 	res1 := ca.Calculate("+")
 	res2 := ca.Calculate("-")
 	res3 := ca.Calculate("*")
 	res4 := ca.Calculate("/")
-	fmt.Printf("%v + %v = %v\n",ca.Num1,ca.Num2,res1)
-	fmt.Printf("%v - %v = %v\n",ca.Num1,ca.Num2,res2)
-	fmt.Printf("%v * %v = %v\n",ca.Num1,ca.Num2,res3)
-	fmt.Printf("%v / %v = %v\n",ca.Num1,ca.Num2,res4)
+	fmt.Printf("%v + %v = %v\n", ca.Num1, ca.Num2, res1)
+	fmt.Printf("%v - %v = %v\n", ca.Num1, ca.Num2, res2)
+	fmt.Printf("%v * %v = %v\n", ca.Num1, ca.Num2, res3)
+	fmt.Printf("%v / %v = %v\n", ca.Num1, ca.Num2, res4)
 }

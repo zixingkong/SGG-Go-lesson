@@ -1,7 +1,7 @@
 package main
 
 import (
-	"SGG-Go-lesson/exercises/test24/model"
+	"SGG-Go-lesson/exercises/test24-encapsulation/model"
 	"fmt"
 )
 

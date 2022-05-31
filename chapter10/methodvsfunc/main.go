@@ -24,12 +24,12 @@ func test02(p *Person) {
 
 func (p Person) test03() {
 	p.Name = "jack"
-	fmt.Println("test03() =", p.Name) // jack
+	fmt.Println("test03-recurse() =", p.Name) // jack
 }
 
 func (p *Person) test04() {
 	p.Name = "mary"
-	fmt.Println("test03() =", p.Name) // mary
+	fmt.Println("test03-recurse() =", p.Name) // mary
 }
 
 func main() {
@@ -48,6 +48,6 @@ func main() {
 
 	(&p).test04()
 	fmt.Println("main() p.name=", p.Name) // mary
-	p.test04() // 等价 (&p).test04 , 从形式上是传入值类型，但是本质仍然是地址拷贝
+	p.test04() // 等价 (&p).test04-pointer , 从形式上是传入值类型，但是本质仍然是地址拷贝
 
 }

@@ -1,7 +1,8 @@
 package main
+
 import (
+	"SGG-Go-lesson/chapter10/factory/model"
 	"fmt"
-	"go_code/chapter10/factory/model"
 )
 
 func main() {

@@ -73,7 +73,6 @@ func main() {
 		Pwd : "666666",
 		Balance : 100.0,
 	}
-
 	//这里可以做的更加灵活，就是让用户通过控制台来输入命令...
 	//菜单....
 	account.Query("666666")
@@ -81,8 +80,4 @@ func main() {
 	account.Query("666666")
 	account.WithDraw(150.0, "666666")
 	account.Query("666666")
-
-	
-
-
 }

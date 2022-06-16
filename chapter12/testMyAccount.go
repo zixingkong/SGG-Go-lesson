@@ -46,7 +46,7 @@ func main() {
 				fmt.Scanln(&note)
 				//将这个收入情况，拼接到details变量
 				//收入    11000           1000            有人发红包
-				details += fmt.Sprintf("\n收入\t%v\t%v\t%v", balance, money, note)
+				details += fmt.Sprintf("\n收入\t%v\t\t%v\t\t%v", balance, money, note)
 				flag = true
 
 			case "3":
@@ -60,7 +60,7 @@ func main() {
 				balance -= money
 				fmt.Println("本次支出说明:")
 				fmt.Scanln(&note)
-				details += fmt.Sprintf("\n支出\t%v\t%v\t%v", balance, money, note)
+				details += fmt.Sprintf("\n支出\t%v\t\t%v\t\t%v", balance, money, note)
 				flag = true
 			case "4":
 				fmt.Println("你确定要退出吗? y/n")

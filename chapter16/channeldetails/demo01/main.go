@@ -22,5 +22,4 @@ func main() {
 	num2 := <-chan3
 	//chan3<- 30 //err
 	fmt.Println("num2", num2)
-
 }

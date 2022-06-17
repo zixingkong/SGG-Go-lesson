@@ -31,6 +31,4 @@ func main() {
 	//使用类型断言
 	a := newCat.(Cat) 
 	fmt.Printf("newCat.Name=%v", a.Name)
-	
-
 }

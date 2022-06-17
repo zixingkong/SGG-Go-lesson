@@ -9,7 +9,7 @@ func addUpper(n int)  int {
 	return res
 }
 
-//求两个数的查
+//求两个数的差
 func getSub(n1 int, n2 int) int {
 	return n1 - n2
 }

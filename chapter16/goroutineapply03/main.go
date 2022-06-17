@@ -89,16 +89,13 @@ func main() {
 
 	//遍历我们的 primeChan ,把结果取出
 	for {
-		_, ok := <-primeChan
+		res, ok := <-primeChan
 		if !ok{
 			break
 		}
 		//将结果输出
-		//fmt.Printf("素数=%d\n", res)
+		fmt.Printf("素数=%d\n", res)
 	}
 
 	fmt.Println("main线程退出")
-
-
-	
 }

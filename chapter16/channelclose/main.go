@@ -33,6 +33,4 @@ func main() {
 	for v := range intChan2 {
 		fmt.Println("v=", v)
 	}
-
-
 }

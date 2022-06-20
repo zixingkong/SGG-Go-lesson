@@ -1,7 +1,8 @@
 package main
+
 import (
-	"reflect"
 	"fmt"
+	"reflect"
 )
 
 
@@ -90,6 +91,4 @@ func main() {
 		Age : 20,
 	}
 	reflectTest02(stu)
-
-
 }

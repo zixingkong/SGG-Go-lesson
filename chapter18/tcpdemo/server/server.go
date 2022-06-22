@@ -1,8 +1,9 @@
 package main
+
 import (
 	"fmt"
+	_ "io"
 	"net" //做网络socket开发时,net包含有我们需要所有的方法和函数
-	_"io"
 )
 
 func process(conn net.Conn) {
@@ -35,7 +36,7 @@ func main() {
 	//net.Listen("tcp", "0.0.0.0:8888")
 	//1. tcp 表示使用网络协议是tcp
 	//2. 0.0.0.0:8888 表示在本地监听 8888端口
-	listen, err := net.Listen("tcp", "0.0.0.0:8888")
+	listen, err := net.Listen("tcp", "127.0.0.1:8888")
 	if err != nil {
 		fmt.Println("listen err=", err)
 		return 

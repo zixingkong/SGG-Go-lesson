@@ -43,7 +43,7 @@ func InsertHeroNode2(head *HeroNode, newHeroNode *HeroNode) {
 	for {
 		if temp.next == nil {//说明到链表的最后
 			break
-		} else if temp.next.no >= newHeroNode.no {
+		} else if temp.next.no > newHeroNode.no {
 			//说明newHeroNode 就应该插入到temp后面
 			break 
 		} else if temp.next.no == newHeroNode.no {
@@ -56,7 +56,6 @@ func InsertHeroNode2(head *HeroNode, newHeroNode *HeroNode) {
 
 	if !flag {
 		fmt.Println("对不起，已经存在no=", newHeroNode.no)
-		return
 	} else {
 		newHeroNode.next = temp.next //ok
 		newHeroNode.pre = temp//ok

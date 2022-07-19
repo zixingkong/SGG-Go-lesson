@@ -13,7 +13,7 @@ func InsertCatNode(head *CatNode, newCatNode *CatNode) {
 		head.no = newCatNode.no
 		head.name = newCatNode.name
 		head.next = head
-		fmt.Println(newCatNode, "加入到环形列表")
+		fmt.Println(newCatNode.no, newCatNode.name, "加入到环形列表")
 		return
 	}
 
@@ -31,7 +31,7 @@ func InsertCatNode(head *CatNode, newCatNode *CatNode) {
 func ListCircleLink(head *CatNode) {
 	fmt.Println("环形链表的情况如下：")
 	temp := head
-	if temp.next == nil{
+	if temp.next == nil {
 		fmt.Println("空空如也的环形链表")
 		return
 	}

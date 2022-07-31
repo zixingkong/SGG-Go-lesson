@@ -27,21 +27,26 @@ import "fmt"
 
 func countingSort(arr []int) []int {
 	maxValue := arr[0]
+	minValue := arr[0]
 	for i := 0; i < len(arr); i++ {
 		if arr[i] > maxValue {
 			maxValue = arr[i]
 		}
+		if arr[i] < minValue {
+			minValue = arr[i]
+		}
 	}
-	bucketLen := maxValue + 1
+	bucketLen := maxValue - minValue + 1
 	bucket := make([]int, bucketLen)
 	sortedIndex := 0
 	length := len(arr)
 	for i := 0; i < length; i++ {
-		bucket[arr[i]] += 1
+		bucket[arr[i]-minValue] += 1
 	}
+
 	for j := 0; j < bucketLen; j++ {
 		for bucket[j] > 0 {
-			arr[sortedIndex] = j
+			arr[sortedIndex] = j + minValue
 			sortedIndex += 1
 			bucket[j] -= 1
 		}

@@ -1,15 +1,16 @@
 // Copyright © 2016 Alan A. A. Donovan & Brian W. Kernighan.
 // License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-package cake
+package cake_test
 
 
 import (
+	"gopl.io/ch8/cake"
 	"testing"
 	"time"
 )
 
-var defaults = Shop{
+var defaults = cake.Shop{
 	Verbose:      testing.Verbose(),
 	Cakes:        20,
 	BakeTime:     10 * time.Millisecond,
